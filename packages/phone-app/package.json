@@ -1,0 +1,28 @@
+{
+  "name": "phone-app",
+  "description": "Webcomponent phone-app following open-wc recommendations",
+  "license": "MIT",
+  "author": "phone-app",
+  "version": "0.0.0",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+    "@minsait/gallery-component": "*",
+    "@minsait/homepage-component": "*",
+    "@minsait/homescreen-component": "*",
+    "@minsait/lockscreen-component": "*",
+    "@minsait/musicplayer-component": "*",
+    "@minsait/todo-component": "*",
+    "@stephband/slide-show": "^1.2.1",
+    "@vaadin/vaadin-icons": "^23.2.5",
+    "@vanillawc/wc-carousel-lite": "^0.0.7",
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.28"
+  },
+  "customElements": "custom-elements.json"
+}

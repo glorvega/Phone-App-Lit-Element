@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../homepage-component.js';
+
+    const name = 'Gloria';
+    render(
+      html`
+        <homepage-component .name=${name}>
+          some light-dom
+        </homepage-component>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

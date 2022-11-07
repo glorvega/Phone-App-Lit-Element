@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.5.1"
+  },
+  "dependencies": {
+    "@polymer/iron-icons": "^3.0.1",
+    "@stephband/slide-show": "^1.2.1",
+    "@vanillawc/wc-carousel-lite": "^0.0.7"
+  }
+}

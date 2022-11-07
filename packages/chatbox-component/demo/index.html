@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../chatbox-component.js';
+
+    const contact = {
+      name: 'Telegram',
+      avatar: 'https://cdn.icon-icons.com/icons2/2201/PNG/512/telegram_logo_circle_icon_134012.png'
+    };
+    const user = {
+      name: 'Yo',
+      avatar: 'https://randomuser.me/api/portraits/thumb/women/82.jpg'
+    };
+    const messages = [
+      {
+        text: ''
+      }
+    ];
+
+    render(
+      html`
+        <chatbox-component 
+        .contact="${contact}"
+        .user="${user}"
+        .messages="${messages}">
+        </chatbox-component>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

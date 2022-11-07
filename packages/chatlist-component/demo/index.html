@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../chatlist-component.js';
+
+    const contacts = [
+    {
+      avatar: 'https://cdn.icon-icons.com/icons2/2201/PNG/512/telegram_logo_circle_icon_134012.png',
+      name: 'Telegram',
+      lastMessage: {
+        text: 'Tienes una actualización',
+        time: `${new Date().getHours()}:${new Date().getMinutes() < 10 ? "0" : ''}${new Date().getMinutes()}`
+      },
+      messages: [
+        {
+          seen: false
+        }
+      ]
+    },
+    {
+      avatar: 'https://cdn.icon-icons.com/icons2/2201/PNG/512/telegram_logo_circle_icon_134012.png',
+      name: 'Telegram',
+      lastMessage: {
+        text: 'Tienes una actualización',
+        time: `${new Date().getHours()}:${new Date().getMinutes() < 10 ? "0" : ''}${new Date().getMinutes()}`
+      },
+      messages: [
+        {
+          seen: false
+        }
+      ]
+    },
+    {
+      avatar: 'https://cdn.icon-icons.com/icons2/2201/PNG/512/telegram_logo_circle_icon_134012.png',
+      name: 'Telegram',
+      lastMessage: {
+        text: 'Tienes una actualización',
+        time: `${new Date().getHours()}:${new Date().getMinutes() < 10 ? "0" : ''}${new Date().getMinutes()}`
+      },
+      messages: [
+        {
+          seen: false
+        }
+      ]
+    }
+  ];
+
+    render(
+      html`
+        <chatlist-component .contacts=${contacts}>
+        </chatlist-component>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
